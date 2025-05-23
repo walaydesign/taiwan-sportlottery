@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台灣運動分析網</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="container">
+            <marquee behavior="" direction="">獨家獲利方程式~帶領會員大獲全勝 用勝率累積財富~讓你輸家變贏家 台灣運動分析網，運動彩券與運動博奕預測，台灣最好的運動彩券分析網站</marquee>
+            <div class="swiper-container banner__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="banner__swiper-item">
+                            <img class="d-md-block d-none" src="./public/img/banner-1.webp" alt="">
+                            <img class="d-md-none" src="./public/img/banner-m-1.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner__swiper-item">
+                            <img class="d-md-block d-none" src="./public/img/banner-2.webp" alt="">
+                            <img class="d-md-none" src="./public/img/banner-m-2.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner__swiper-item">
+                            <img class="d-md-block d-none" src="./public/img/banner-3.webp" alt="">
+                            <img class="d-md-none" src="./public/img/banner-m-3.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container d-flex align-items-center justify-content-between">
+            <ul class="header__tab nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a href="./index-asian.html" class="nav-link nav-link--blue">
+                        亞洲<br>嚴選
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="./index-exclusive.html" class="nav-link nav-link--yellow">
+                        獨家<br>
+                        資訊
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="./index-important.html" class="nav-link nav-link--orange">
+                        重注<br>
+                        鐵牌
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="./index-inside.html" class="nav-link nav-link--green">
+                        內幕<br>
+                        猛料
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="./index-predict.html" class="nav-link nav-link--brightblue">
+                        權威<br>
+                        預測
+                    </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a href="./index-rich.html" class="nav-link nav-link--purple">
+                        致富<br>
+                        關鍵
+                    </a>
+                </li>
+            </ul>
+            <nav class="header__nav">
+                <ul>
+                    <li>
+                        <a href="./index-asian.html" class="c-header-nav-item">
+                            <div class="c-header-nav-item__wrapper">
+                                <span class="c-header-nav-item__ch">回首頁</span>
+                                <span class="c-header-nav-item__en">HOME</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./buy-login.html" class="c-header-nav-item">
+                            <div class="c-header-nav-item__wrapper">
+                                <span class="c-header-nav-item__ch">購買方案</span>
+                                <span class="c-header-nav-item__en">PURCHASE</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="c-header-nav-item" data-bs-toggle="modal" data-bs-target="#modal-login">
+                            <div class="c-header-nav-item__wrapper">
+                                <span class="c-header-nav-item__ch">登入</span>
+                                <span class="c-header-nav-item__en">SIGN IN</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="c-header-nav-item" data-bs-toggle="modal" data-bs-target="#modal-signup">
+                            <div class="c-header-nav-item__wrapper">
+                                <span class="c-header-nav-item__ch">加入會員</span>
+                                <span class="c-header-nav-item__en">JOIN US</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="container">
+            <div class="main">
+                <div class="buy row">
+                    <div class="col-md-12 col-sm-6">
+                        <div class="buy_item">
+                            <div class="buy_content">
+                                <div class="buy_pic">
+                                    <img src="./public/img/case-1.webp" alt="">
+                                </div>
+                                <div class="buy_text">
+                                    <h2 class="buy_name">亞洲嚴選方案</h2>
+                                    <div class="buy_select">
+                                        <select name="" id="">
+                                            <option value="">請選擇項目</option>
+                                            <option value="">$3000 / 1場</option>
+                                            <option value="">$8000 / 3場</option>
+                                            <option value="">$12000 / 5場</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="buy_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請登入會員</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6">
+                        <div class="buy_item">
+                            <div class="buy_content">
+                                <div class="buy_pic">
+                                    <img src="./public/img/case-2.webp" alt="">
+                                </div>
+                                <div class="buy_text">
+                                    <h2 class="buy_name">獨家資訊方案</h2>
+                                    <div class="buy_select">
+                                        <select name="" id="">
+                                            <option value="">請選擇項目</option>
+                                            <option value="">$3000 / 1場</option>
+                                            <option value="">$8000 / 3場</option>
+                                            <option value="">$12000 / 5場</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="buy_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請登入會員</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6">
+                        <div class="buy_item">
+                            <div class="buy_content">
+                                <div class="buy_pic">
+                                    <img src="./public/img/case-3.webp" alt="">
+                                </div>
+                                <div class="buy_text">
+                                    <h2 class="buy_name">重注鐵牌方案</h2>
+                                    <div class="buy_select">
+                                        <select name="" id="">
+                                            <option value="">請選擇項目</option>
+                                            <option value="">$3000 / 1場</option>
+                                            <option value="">$8000 / 3場</option>
+                                            <option value="">$12000 / 5場</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="buy_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請登入會員</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6">
+                        <div class="buy_item">
+                            <div class="buy_content">
+                                <div class="buy_pic">
+                                    <img src="./public/img/case-4.webp" alt="">
+                                </div>
+                                <div class="buy_text">
+                                    <h2 class="buy_name">內幕猛料方案</h2>
+                                    <div class="buy_select">
+                                        <select name="" id="">
+                                            <option value="">請選擇項目</option>
+                                            <option value="">$3000 / 1場</option>
+                                            <option value="">$8000 / 3場</option>
+                                            <option value="">$12000 / 5場</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="buy_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請登入會員</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6">
+                        <div class="buy_item">
+                            <div class="buy_content">
+                                <div class="buy_pic">
+                                    <img src="./public/img/case-5.webp" alt="">
+                                </div>
+                                <div class="buy_text">
+                                    <h2 class="buy_name">權威預測方案</h2>
+                                    <div class="buy_select">
+                                        <select name="" id="">
+                                            <option value="">請選擇項目</option>
+                                            <option value="">$3000 / 1場</option>
+                                            <option value="">$8000 / 3場</option>
+                                            <option value="">$12000 / 5場</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="buy_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請登入會員</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-6">
+                        <div class="buy_item">
+                            <div class="buy_content">
+                                <div class="buy_pic">
+                                    <img src="./public/img/case-6.webp" alt="">
+                                </div>
+                                <div class="buy_text">
+                                    <h2 class="buy_name">致富關鍵方案</h2>
+                                    <div class="buy_select">
+                                        <select name="" id="">
+                                            <option value="">請選擇項目</option>
+                                            <option value="">$3000 / 1場</option>
+                                            <option value="">$8000 / 3場</option>
+                                            <option value="">$12000 / 5場</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="buy_btn" data-bs-toggle="modal" data-bs-target="#modal-login">請登入會員</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="c-sidebar-line">
+                    <div class="c-sidebar-line__title">
+                        <img src="./public/img/line.svg" alt="">
+                        <h3>點我詢問</h3>
+                    </div>
+                    <img src="./public/img/qrcode.webp" alt="">
+                    <h4 class="c-sidebar-line__id">twstir168</h4>
+                </div>
+                <div class="sidebar__right">
+                    <div class="c-sidebar-phone">
+                        <div class="c-sidebar-phone__icon">
+                            <img src="./public/img/phone.svg" alt="">
+                        </div>
+                        <h3>0966-243-950</h3>
+                    </div>
+                    <img class="c-sidebar-ad" src="./public/img/ad.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>
+            台灣運動分析網分析網版權所有，Copyright © Sport Game Taiwan All Reserved，建議您使用 1024 * 768 畫面以上的畫面瀏覽<br>
+            本站提供您的內容請勿任意轉載或複製。提醒您：進入本站、參與運動彩劵者需年滿20歲，未滿者不得加入行使任何會員之權利
+        </p>
+    </footer>
+
+    <div class="modal fade modal-member" id="modal-login" tabindex="-1" aria-labelledby="modal-loginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="modal-member_x" data-bs-dismiss="modal">
+                        <img src="./public/img/x.svg" alt="">
+                    </button>
+                    <h3 class="modal-title">登入</h3>
+                    <div>
+                        <div class="modal-member_input">
+                            <input type="text" placeholder="帳號">
+                        </div>
+                        <div class="modal-member_input">
+                            <input type="password" placeholder="密碼">
+                        </div>
+                    </div>
+                    <button class="modal-btn">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-member" id="modal-signup" tabindex="-1" aria-labelledby="modal-signupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-content_inner">
+                    <div class="modal-body">
+                        <button class="modal-member_x" data-bs-dismiss="modal">
+                            <img src="./public/img/x.svg" alt="">
+                        </button>
+                        <h3 class="modal-title">註冊</h3>
+                        <div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="會員帳號">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="password" placeholder="會員密碼">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="password" placeholder="密碼確認">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="大名">
+                            </div>
+                            <div class="modal-member_input">
+                                <select name="" id="">
+                                    <option value="">性別</option>
+                                </select>
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="number" placeholder="聯絡手機">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="LINE ID">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="text" placeholder="微信">
+                            </div>
+                            <div class="modal-member_input">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="modal-member_checkbox">
+                                <input type="checkbox" id="consent">
+                                <label for="consent">同意<a href="./term.html">會員條款</a></label>
+                            </div>
+                        </div>
+                        <button class="modal-btn">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/common.js"></script>
+
+</body>
+</html>
