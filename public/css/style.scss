@@ -209,6 +209,8 @@ img {
     &__nav {
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 20px;
         p {
             margin: 0;
@@ -217,6 +219,11 @@ img {
             display: flex;
             align-items: center;
             gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &-logout {
+            text-decoration: underline;
         }
     }
     .c-header-nav-item {
@@ -278,6 +285,15 @@ img {
             order: 1;
             justify-content: center;
             margin-bottom: 40px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        &__nav {
+            display: block;
+            text-align: center;
+            ul {
+                margin: 30px 0;
+            }
         }
     }
     @media screen and (max-width: 575px) {
@@ -1269,6 +1285,80 @@ img {
             p {
                 font-size: 14px !important;
             }
+        }
+    }
+}
+
+.news {
+    margin-bottom: 40px;
+    &_item {
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        &:nth-child(odd) {
+            background-color: #1F1F1F;
+        }
+        &:nth-child(even) {
+            background-color: #0C0C0C;
+        }
+        &_date {
+            font-family: $font-lato;
+            color: #FFFF00;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        &_title {
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+        }
+        &_text {
+            width: calc(100% - 16px);
+            padding-right: 15px;
+        }
+        &_arrow {
+            width: 16px;
+        }
+    }
+    &-detail {
+        &_head {
+            text-align: center;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            h1 {
+                color: #fff;
+                margin-bottom: 14px;
+                font-size: 32px;
+                font-weight: 700;
+            }
+        }
+        &_date {
+            color: #FFFF00;
+            font-size: 16px;
+            margin: 0;
+            font-weight: 700;
+        }
+        &_content {
+            padding: 40px 0;
+            p {
+                color: #fff;
+                margin: 0;
+                text-align: justify;
+                line-height: 1.6;
+            }
+        }
+        &_back {
+            background: linear-gradient(to bottom, #96CA17 0%, #5D8F14 100%);
+            color: #fff;
+            border-radius: 5px;
+            padding: 8px 16px;
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
         }
     }
 }
