@@ -17,3 +17,8 @@ var swiper = new Swiper(".banner__swiper", {
         },
     },
 })
+
+$(".header_menu").click(function () {
+  $(this).toggleClass("active");
+  $(".header__nav").toggleClass("active");
+});
